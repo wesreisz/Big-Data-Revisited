@@ -24,7 +24,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 36px;
   font-weight: normal;
-  color: #eee; }
+  color: #222; }
 
 ::selection {
   color: #fff;
@@ -40,7 +40,7 @@ body {
  *********************************************/
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin: 0 0 20px 0;
-  color: #eee;
+  color: #222;
   font-family: 'League Gothic', Impact, sans-serif;
   font-weight: normal;
   line-height: 1.2;
@@ -187,20 +187,20 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #13DAEC;
+  color: #999;
   text-decoration: none;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
   transition: color 0.15s ease; }
 
 .reveal a:hover {
-  color: #71ebf4;
+  color: #bfbfbf;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #0d9ba5; }
+  background: #737373; }
 
 /*********************************************
  * IMAGES
@@ -208,7 +208,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #eee;
+  border: 4px solid #222;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .reveal a img {
@@ -218,35 +218,35 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #13DAEC;
+  border-color: #999;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
-  border-right-color: #13DAEC; }
+  border-right-color: #999; }
 
 .reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
-  border-left-color: #13DAEC; }
+  border-left-color: #999; }
 
 .reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #13DAEC; }
+  border-bottom-color: #999; }
 
 .reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
-  border-top-color: #13DAEC; }
+  border-top-color: #999; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #71ebf4; }
+  border-right-color: #bfbfbf; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #71ebf4; }
+  border-left-color: #bfbfbf; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #71ebf4; }
+  border-bottom-color: #bfbfbf; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #71ebf4; }
+  border-top-color: #bfbfbf; }
 
 /*********************************************
  * PROGRESS BAR
@@ -255,7 +255,7 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #13DAEC;
+  background: #999;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
@@ -264,4 +264,131 @@ body {
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-  color: #13DAEC; }
+  color: #999; }
+
+/*********************************************
+ * My Customizations
+ *********************************************/
+.reveal section img {
+  margin: 0px;
+  background: rgba(255, 255, 255, 0);
+  border: 0px;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0); }
+
+.slides > .white {
+  background-color: #E6E6E6;
+  margin: 20px;
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 960px;
+  height: 700px;
+  zoom: 0.8627142857; }
+
+.gitfork {
+  position: absolute;
+  top: -120px;
+  right: -5px; }
+  .gitfork a:hover {
+    text-decoration: none; }
+
+.definition {
+  width: 75%;
+  text-align: right;
+  position: absolute;
+  right: 50px;
+  top: -50px; }
+
+.shift-left {
+  position: relative;
+  left: -400px;
+  top: 100px;
+  font-size: smaller; }
+
+.iot-estimate {
+  position: relative;
+  left: -150px;
+  top: 100px;
+  font-size: smaller; }
+
+/*********************************************
+ * My Build Animations
+ *********************************************/
+#nexus {
+  transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg); }
+
+#semi {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg); }
+
+#nest {
+  position: absolute;
+  top: 300px;
+  left: 400px; }
+
+#tesla {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg); }
+
+#fitbit {
+  position: absolute;
+  top: 250px;
+  right: 30px; }
+
+#hue {
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg); }
+
+#greenbean {
+  position: absolute;
+  top: 200px;
+  left: 250px;
+  transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg); }
+
+#skybell {
+  position: absolute;
+  top: 400px;
+  right: 20px;
+  transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg); }
+
+#tshirt {
+  height: 500px;
+  width: 800px; }
+
+#arrow {
+  position: relative;
+  top: 0px;
+  left: 50px;
+  transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  -webkit-transform: rotate(8deg); }
+
+#vs {
+  position: absolute;
+  top: 80px;
+  right: 50px; }
+
+#bigdata-worth {
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  width: 300px;
+  color: red;
+  text-align: center; }

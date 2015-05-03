@@ -18,6 +18,11 @@
 @import url(../../lib/font/league-gothic/league-gothic.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 
+$mainColor: #222;
+$headingColor: #222;
+$linkColor: #999;
+$linkColorHover: lighten( $linkColor, 15% );
+
 // Override theme settings (see ../template/settings.scss)
 $headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
 $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
@@ -32,3 +37,142 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+/*********************************************
+ * My Customizations
+ *********************************************/
+
+.reveal section img {
+	margin: 0px;
+	background: rgba(255,255,255,0);
+	border: 0px;
+
+	box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+}
+
+.slides>.white{
+  background-color: #E6E6E6;
+  margin: 20px;
+  border: 2px solid  black;
+  border-radius: 25px;
+  width: 960px;
+  height: 700px;
+  zoom: 0.862714285714286;
+} 
+
+.gitfork{
+  position: absolute;
+  top: -120px;
+  right: -5px;
+  a:hover{
+      text-decoration: none;
+    } 
+}
+
+.definition{
+	width: 75%;
+	text-align: right;
+	position: absolute;
+	right: 50px;
+	top: -50px;
+}
+
+.shift-left{
+	position: relative;
+	left: -400px;
+	top: 100px;
+	font-size: smaller;
+}
+
+.iot-estimate{
+	position: relative;
+	left: -150px;
+	top: 100px;
+	font-size: smaller;
+}
+
+
+
+/*********************************************
+ * My Build Animations
+ *********************************************/
+#nexus{
+  transform:rotate(-15deg);
+  -ms-transform:rotate(-15deg);
+  -webkit-transform:rotate(-15deg);
+}
+#semi{
+  position: absolute; 
+  top:0px; 
+  left:0px;
+  transform:rotate(-15deg);
+  -ms-transform:rotate(-15deg);
+  -webkit-transform:rotate(-15deg);
+}
+#nest{
+  position: absolute; 
+  top:300px; 
+  left:400px;  
+}
+#tesla{
+	position: absolute; 
+	top:30px; 
+	right:50px;  
+	transform:rotate(10deg);
+	-ms-transform:rotate(10deg);
+	-webkit-transform:rotate(10deg);
+}
+#fitbit{
+	position: absolute; 
+	top:250px; 
+	right:30px; 
+}
+#hue{
+	position: absolute; 
+	top:300px; 
+	left:50px; 
+	transform:rotate(15deg);
+	-ms-transform:rotate(15deg);
+	-webkit-transform:rotate(15deg); 
+}
+#greenbean{
+	position: absolute; 
+	top:200px; 
+	left:250px; 
+	transform:rotate(15deg);
+	-ms-transform:rotate(15deg);
+	-webkit-transform:rotate(15deg);
+}
+#skybell{
+    position: absolute; 
+    top:400px; 
+    right:20px; 
+    transform:rotate(-15deg);
+	-ms-transform:rotate(-15deg);
+	-webkit-transform:rotate(-15deg);
+}
+#tshirt{
+	height: 500px;
+	width:800px;
+}
+#arrow{
+	position: relative; 
+	top:0px; 
+	left:50px;
+	transform:rotate(8deg);
+	-ms-transform:rotate(8deg);
+	-webkit-transform:rotate(8deg)
+}
+#vs{
+	position: absolute; 
+	top:80px; 
+	right:50px;
+}
+#bigdata-worth{
+    position: absolute; 
+    top:400px; 
+    left: 100px;
+    width: 300px;
+    color: red;
+    text-align: center;
+}
