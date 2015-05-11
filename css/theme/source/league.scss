@@ -62,8 +62,8 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 
 .gitfork{
   position: absolute;
-  top: -120px;
-  right: -5px;
+  top: 0px;
+  right: 0px;
   a:hover{
       text-decoration: none;
     } 
@@ -74,21 +74,24 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 	text-align: right;
 	position: absolute;
 	right: 50px;
-	top: -50px;
+	top: -100px;
 }
 
 .shift-left{
 	position: relative;
-	left: -400px;
-	top: 100px;
+	left: -300px;
+	top: 00px;
 	font-size: smaller;
 }
-
 .iot-estimate{
 	position: relative;
 	left: -150px;
 	top: 100px;
 	font-size: smaller;
+}
+.spaced-li li{
+	margin: 0 0 20pt 0;
+	text-align: left;
 }
 
 
@@ -100,10 +103,13 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
   transform:rotate(-15deg);
   -ms-transform:rotate(-15deg);
   -webkit-transform:rotate(-15deg);
+  position: absolute; 
+  top:60px; 
+  left:400px;
 }
 #semi{
   position: absolute; 
-  top:0px; 
+  top:60px; 
   left:0px;
   transform:rotate(-15deg);
   -ms-transform:rotate(-15deg);
@@ -116,7 +122,7 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 }
 #tesla{
 	position: absolute; 
-	top:30px; 
+	top:60px; 
 	right:50px;  
 	transform:rotate(10deg);
 	-ms-transform:rotate(10deg);
@@ -138,15 +144,15 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 #greenbean{
 	position: absolute; 
 	top:200px; 
-	left:250px; 
-	transform:rotate(15deg);
-	-ms-transform:rotate(15deg);
-	-webkit-transform:rotate(15deg);
+	left:350px; 
+	transform:rotate(30deg);
+	-ms-transform:rotate(30deg);
+	-webkit-transform:rotate(30deg);
 }
 #skybell{
     position: absolute; 
     top:400px; 
-    right:20px; 
+    right:150px; 
     transform:rotate(-15deg);
 	-ms-transform:rotate(-15deg);
 	-webkit-transform:rotate(-15deg);
@@ -158,21 +164,53 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 #arrow{
 	position: relative; 
 	top:0px; 
-	left:50px;
+	left:-175px;
 	transform:rotate(8deg);
 	-ms-transform:rotate(8deg);
 	-webkit-transform:rotate(8deg)
 }
 #vs{
 	position: absolute; 
-	top:80px; 
-	right:50px;
+	top:110px; 
+	right:100px;
 }
 #bigdata-worth{
     position: absolute; 
-    top:400px; 
+    top:350px; 
     left: 100px;
-    width: 300px;
+    width: 400px;
     color: red;
     text-align: center;
+}
+
+#many-arrows{
+	position: absolute; 
+    top:350px; 
+    right: 150px;
+    transform:rotate(16deg);
+	-ms-transform:rotate(16deg);
+	-webkit-transform:rotate(16deg)
+}
+#utility{
+	position: absolute; 
+    top:500px; 
+    right: 100px;
+}
+#nexus-on-iot{
+	position: absolute; 
+    top:400px; 
+    right: 500px;
+    width: 150px;
+}
+#research{
+	position: absolute; 
+    top:490px; 
+    right: 5px;
+    width: 200px;
+}
+#move-down{
+	position: absolute; 
+    transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg)
 }
