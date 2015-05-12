@@ -310,6 +310,16 @@ body {
   margin: 0 0 20pt 0;
   text-align: left; }
 
+.notspaced-li li {
+  margin: 0 0 0pt 0;
+  text-align: left; }
+
+.footer {
+  position: absolute;
+  font-size: 50% !important;
+  bottom: 50px;
+  left: 30px; }
+
 /*********************************************
  * My Build Animations
  *********************************************/

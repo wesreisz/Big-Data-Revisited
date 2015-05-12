@@ -61,35 +61,39 @@
 
 						<p>
 							<small>
-								<a href="http://wesleyreisz.com">wesleyreisz.com</a><br />
-								<a href="https://github.com/wesreisz/Big-Data-Revisited">https://github.com/wesreisz/Big-Data-Revisited</a><br />
-								<a href="http://twitter.com/wesreisz">@wesreisz</a>
+								<a target="_blank" href="http://wesleyreisz.com">wesleyreisz.com</a><br />
+								<a target="_blank" href="https://github.com/wesreisz/Big-Data-Revisited">https://github.com/wesreisz/Big-Data-Revisited</a><br />
+								<a target="_blank" href="http://twitter.com/wesreisz">@wesreisz</a>
 							</small>
 						</p>
 					</section>
 				</section>
 
 				<section class="white">
-					<h2>Do you remember when it all started?</h2>
+					<h2>Do you remember when...</h2>
 					<section id="fragments">
 						<span class="fragment" id="nexus"><img src="img/nexus.png" /></span>
 						<span class="fragment" id="semi"><img src="img/18-wheeler-semi-truck.png" /></span>
 						<span class="fragment" id="nest"><img src="img/nest.png"/></span>
+						<span class="fragment" id="hue"><img src="img/hue.png" /></span>
 						<span class="fragment" id="tesla"><img src="img/tesla-s.png"/></span>
 						<span class="fragment" id="fitbit"><img src="img/fitbit-charge.png" /></span>
-						<span class="fragment" id="hue"><img src="img/hue.png" /></span>
 						<span class="fragment" id="skybell"><img src="img/skybell.png"/></span>
 						<span class="fragment" id="greenbean"><img src="img/greenbean-8.png"/></span>
 
 
 						<aside class="notes">
-							Google Buys Nest for $3.2 Billion<br />
+							- Phone: Context<br />
+							- Transportation: RFID, JIT delivery, automatic ordering<br />
+							Whatever the case... it's everywhere now<br />
+							- Nest: Google Buys for $3.2 Billion<br />
 			  				SkyBell
 						</aside>
 					</section>
 				</section>
 
 				<section class="white">
+					<h2>Apparel</h2>
 					<section>
 						<iframe id="tshirt" width="560" height="315" src="https://www.youtube.com/embed/w0RtOliUTqM" frameborder="0" allowfullscreen></iframe>	
 					</section>
@@ -131,14 +135,20 @@
 						</ul>
 					</small>
 					<aside class="notes">
+						These things connect and automate our lives<br />
 						Jawbone >> Nest<br />
+						Electricity market bidding <br />
 					</aside>
 				</section>
 
 				<section class="white">
 					<section>
 						<h2>What does IoT have to do with Big Data?</h2>
+						<aside class="notes">
+						Things explosion of sensor data.
+					</aside>
 					</section>
+
 				</section>
 
 				<section data-background="/img/Data-Deluge_11-550x412.jpg">		
@@ -180,13 +190,81 @@
 				<section class="white">
 					<h2>Let's do a quick Review of the <br /> Key Components of Big Data.</h2>
 					<section>
+						<br /><br /><br />
+						<img src="img/hadoop-elephant.png" style="width: 300px;" />
 						<ul class="spaced-li" style="width: 90%;">
-							<li>HDFS</li>
-							<li>MapReduce</li>
+							<li>Hadoop</li>
+								<ul class="spaced-li" style="width: 90%;">
+									<li>HDFS</li>
+									<li>MapReduce</li>
+								</ul>
 						</ul>
-						
 					</section>
 				</section>
+
+				<section class="white">
+					<h2>Let's do a quick Review of the <br /> Key Components of Big Data.</h2>
+					<section>
+						<small style="text-align: left; width: 90%;padding-top: 200px;">
+							<span><b>HDFS:</b> HDFS is a distributed, scalable, and portable file system written in Java for the Hadoop framework. Each node in a Hadoop instance typically has a single namenode; a cluster of datanodes form the HDFS cluster. The situation is typical because each node does not require a datanode to be present. Each datanode serves up blocks of data over the network using a block protocol specific to HDFS. The file system uses the TCP/IP layer for communication. </span><br /><br />
+							<span><b>MapReduce: </b> is a programming model for processing large data sets, and the name of an implementation of the model by Google. MapReduce is typically used to do distributed computing on clusters of computers.<br /><br />
+							Writing a parallel-executable program has proven over the years to be a very challenging task. MapReduce simples the process by requiring coders to write only the simpler Map() and Reduce() functions, which focus on the logic of the specific problem at hand, while the "MapReduce System" handles the marshalling of the distributed servers, running the various tasks in parallel, managing all communications and data transfers between the various parts of the system, providing for redundancy and failures, and overall management of the whole process.<br /><br />
+							</span>
+						</small>
+					</section>
+				</section>	
+
+				<section data-background="img/hadoop_arch.png">
+				</section>
+
+				<section class="white">
+					<h2>HDFS Features</h2>
+					<section>
+						<small style="text-align: left; width: 90%;">
+							<ul>
+								<li>Designed to store large files</li> 
+								<li>Fault tolerant and self-healing distributed file system</li>
+								<li>Stores files as large blocks (64 to 128 MB) </li>
+								<li>Each block stored on multiple servers </li>
+								<li>Data is automatically re-replicated on need </li>
+								<li>Accessed from command line, Java API, C API, and... C#</li>
+							</ul>
+							<br /><br /><br /><br />
+						</small>
+					</section>
+				</section>	
+
+				<section data-background="img/Mapreduce_Overview.png">
+				</section>
+
+				<section class="white">
+					<h2>MapReduce Features</h2>
+					<section>
+						<small style="text-align: left; width: 90%;">
+							<ul>
+								<li>Fine grained Map and Reduce tasks</li> 
+								<ul>
+									<li>Improved load balancing</li> 
+									<li>Faster recovery from failed tasks </li> 
+								</ul>
+								<li>Automatic re-execution on failure </li> 
+								<ul>
+									<li>In a large cluster, some nodes are always slow or flaky </li> 
+									<li>Introduces long tails or failures in computation </li> 
+									<li>Framework re-executes failed tasks</li> 
+								</ul>
+								<li>Locality optimizations </li> 
+								<ul>
+									<li>With big data, bandwidth to data is a problem </li> 
+									<li>Map-Reduce + HDFS is a very effective solution </li> 
+									<li>Map-Reduce queries HDFS for locations of input data </li> 
+									<li>Map tasks are scheduled local to the inputs when possible</li> 
+								</ul>	
+							</ul>
+							<br /><br /><br /><br />
+						</small>
+					</section>
+				</section>	
 
 				<section class="white">
 					<p>
@@ -250,9 +328,15 @@
 				<section class="white">
 					<h2 style="width:90%">Key Challenges with Big Data</h2>
 					<section>
-						<small style="width:90%">	
+						<small style="width:90%;padding-top:100px;">	
 							<ul class="spaced-li">
-								<li>Privacy is a Huge Concern</li>
+								<li>Privacy is a Huge Concern<br />
+									<ul class="notspaced-li">
+										<li><a target="_blank" href="https://maps.google.com/locationhistory/b/0">Android Location History</a></li>
+										<li><a target="_blank" href="http://www.google.com/policies/privacy/#infouse">Google Privacy Policy</a></li>
+										
+									</ul>
+								</li>
 								<li>Big data has moved from "cool experiments" toward a demand for integration with other production environments. Even large Hadoop clusters often remain isolated and organizations are now demanding "integrated" operations.</li>
 								<li>Repeatability is the new demand in big data. Can use cases be broken down into components that are reused throughout multiple applications?</li>
 								<li>Need for better self-service data preparation tools too accelerate the shift toward business-user-generated data discovery and advanced analytics</li>
@@ -420,11 +504,10 @@
 				<h2 style="width:90%">How Can you Use Some of these Toolks in your Classroom or your research?</h2>
 				<section>
 					<small style="width:90%">	
-					<br /><br /><br /><br /><br />
-						<ul class="spaced-li">
+						<ul class="notspaced-li">
 						<br /><br /><br />
-							<li><strong>Traditional RDMS (such as SQL Server)</strong></li>
-							<li><strong>On Prem Install (I'm partial to Cloudera)</strong></li>
+							<li><strong>Traditional RDMS</strong> (such as SQL Server)>/li>
+							<li><strong>On-Prem Install</strong> (I'm partial to Cloudera)</li>
 							<li><strong>AWS:</strong></li>
 							<ul>
 								<li>EC2: IaaS</li>
@@ -439,7 +522,7 @@
 									<li>HDInsight Emulator</li>
 								</ul>	
 							</ul>
-							<li>Research: http://research.microsoft.com/en-us/projects/azure/default.aspx</li>	
+							<li><strong>Research</strong>: <br /><a target="_blank" href="http://research.microsoft.com/en-us/projects/azure/default.aspx">http://research.microsoft.com/en-us/projects/azure/default.aspx</a></li>	
 						</ul>
 					</small>
 				</section>
@@ -452,6 +535,14 @@
 					<a href="https://www.microsoftazurepass.com/azureu">https://www.microsoftazurepass.com/azureu</a>
 				</section>	
 			</section>
+
+			<section class="white">
+				<h2 style="width:90%">Let's Review</h2>
+				<section>
+					
+				</section>	
+			</section>
+
 
 			<section class="white">
 				<h2 style="width:90%">References</h2>
@@ -474,20 +565,20 @@
 				</section>
 			</section>
 
-				<section class="white">
-					<section>
-						<h1>Thank You!</h1>
-						<h3>Big Data Revisited: Checking Today's Big Data Pulse</h3>
+			<section class="white">
+				<section>
+					<h1>Thank You!</h1>
+					<h3>Big Data Revisited: Checking Today's Big Data Pulse</h3>
 
-						<p>
-							<small>
-								<a href="http://wesleyreisz.com">wesleyreisz.com</a><br />
-								<a href="https://github.com/wesreisz/Big-Data-Revisited">https://github.com/wesreisz/Big-Data-Revisited</a><br />
-								<a href="http://twitter.com/wesreisz">@wesreisz</a>
-							</small>
-						</p>
-					</section>
+					<p>
+						<small>
+							<a href="http://wesleyreisz.com">wesleyreisz.com</a><br />
+							<a href="https://github.com/wesreisz/Big-Data-Revisited">https://github.com/wesreisz/Big-Data-Revisited</a><br />
+							<a href="http://twitter.com/wesreisz">@wesreisz</a>
+						</small>
+					</p>
 				</section>
+			</section>
 
 			<section class="white">
 				<section>
@@ -497,6 +588,12 @@
 				</section>
 			</section>
 
+			</div>
+
+			<div class="footer">
+				<a target="_blank" href="http://wesleyreisz.com">wesleyreisz.com</a> 
+					&nbsp; | &nbsp;
+				<a target="_blank" href="http://twitter.com/wesreisz">@wesreisz</a>
 			</div>
 		</div>
 
