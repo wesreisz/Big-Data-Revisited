@@ -315,10 +315,11 @@ body {
   text-align: left; }
 
 .footer {
-  position: absolute;
+  width: 100%;
+  text-align: center;
   font-size: 50% !important;
-  bottom: 50px;
-  left: 30px; }
+  position: absolute;
+  bottom: 5%; }
 
 /*********************************************
  * My Build Animations
@@ -436,3 +437,11 @@ body {
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg); }
+
+#data-science {
+  position: absolute;
+  top: 120px;
+  left: 300px;
+  transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg); }
