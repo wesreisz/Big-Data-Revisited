@@ -462,3 +462,8 @@ body {
   transform: rotate(140deg);
   -ms-transform: rotate(140deg);
   -webkit-transform: rotate(140deg); }
+
+#privacy {
+  position: absolute;
+  top: 100px;
+  right: 0px; }
